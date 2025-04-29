@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f1f8f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #3c9ecf;
+  color: white;
+  padding: 2rem 0 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Lora', serif;
+  color: white;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav li a {
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #d8f3ff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.alerta-simulador {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+footer {
+  background-color: #3c9ecf;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+#simular-alerta {
+  background-color: red;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#simular-alerta:hover {
+  background-color: darkred;
+}
+
+#alerta-visual {
+  margin-top: 1rem;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  display: none;
+  animation: alertaAnimado 0.5s ease-in-out;
+}
+
+#alerta-visual.ativo {
+  display: block;
+}
+
+.como-funciona {
+  margin-top: 3rem;
+}
+
+.como-funciona ul {
+  list-style: none;
+  padding: 0;
+}
+
+.como-funciona li {
+  background: #e8f6fc;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid #3c9ecf;
+  border-radius: 8px;
+}
+
+@keyframes alertaAnimado {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro,
+.alerta-grid {
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
