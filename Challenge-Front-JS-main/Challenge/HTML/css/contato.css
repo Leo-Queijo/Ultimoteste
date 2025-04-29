@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f1f8f9;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #3c9ecf;
+    color: white;
+    padding: 2rem 0 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    color: white;
+  }
+  
+  nav ul {
+    display: grid;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  nav li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav li a:hover {
+    color: #d8f3ff;
+  }
+  
+
+  .contato {
+    min-height: 100vh;
+    background-color: #fefefe;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .contato h2 {
+    font-size: 2.5rem;
+    color: #3c9ecf;
+    font-weight: bold;
+  }
+  
+  .contato p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+
+  form {
+    background-color: #e6f4f9;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  form .form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  form .form-control {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #cdd5df;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  form .form-control:focus {
+    border-color: #3c9ecf;
+    box-shadow: 0 0 0 4px rgba(60, 158, 207, 0.2);
+    outline: none;
+  }
+  
+  form button {
+    background-color: #3c9ecf;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 0.8rem 2rem;
+  }
+  
+  form button:hover {
+    background-color: #2e85b6;
+    transform: scale(1.03);
+  }
+  
+  form button i {
+    transition: transform 0.3s ease;
+  }
+  
+  form button:hover i {
+    transform: translateX(5px);
+  }
+  
+
+  footer {
+    background-color: #3c9ecf;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  
+
+  @media (max-width: 767px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  
+    .contato h2 {
+      font-size: 2rem;
+    }
+  
+    .contato p {
+      font-size: 1rem;
+    }
+  
+    form {
+      padding: 2rem;
+    }
+  }
+  

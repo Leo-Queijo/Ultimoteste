@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Saúde Infantil</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/funcionalidades.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="text-center">Saúde Infantil</h1>
+      <nav>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="mx-3"><a href="./index.html" class="text-decoration-none text-white">Início</a></li>
+          <li class="mx-3"><a href="./vantagens.html" class="text-decoration-none text-white">Vantagens</a></li>
+          <li class="mx-3"><a href="./contato.html" class="text-decoration-none text-white">Contato</a></li>
+          <li class="mx-3"><a href="./adicionar.html" class="text-decoration-none text-white">Tarefas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="funcionalidades py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Funcionalidades do App</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card shadow-sm" id="showCalendarioCard" style="cursor: pointer;">
+            <img src="./img/calendario.png" alt="Calendário" class="img-fluid mb-3 rounded">
+            <h3>Calendário de Consultas</h3>
+            <p>Agende e acompanhe as consultas médicas do seu filho com facilidade.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm" onclick="window.location.href='historico.html'" style="cursor: pointer;">
+            <img src="./img/historico.png" alt="Histórico" class="img-fluid mb-3 rounded">
+            <h3>Histórico Médico</h3>
+            <p>Registre o histórico de saúde para acompanhar o progresso de seu filho.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm" onclick="window.location.href='monitoramento.html'" style="cursor: pointer;">
+            <img src="./img/comida.png" alt="Monitoramento Nutricional" class="img-fluid mb-3 rounded">
+            <h3>Monitoramento Nutricional</h3>
+            <p>Acompanhe peso, altura, IMC e dieta das crianças durante e após a internação.</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card shadow-sm" id="showFilaOnlineCard" style="cursor: pointer;">
+            <img src="./img/fila.png" alt="Fila Online" class="img-fluid mb-3 rounded">
+            <h3>Fila Online de Atendimento</h3>
+            <p>Visualize sua posição em tempo real e acompanhe o andamento do atendimento.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="text-center">&copy; 2025 App Saúde Infantil - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+
+    document.getElementById("showCalendarioCard").addEventListener("click", () => {
+      window.location.href = "./calendario.html";
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
